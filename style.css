@@ -46,6 +46,14 @@ a:hover{
     color: white;
 }
 
-main{
-    
+.login
+{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #F2BF80;
+    width: 550px;
+    height: 250px;
+    align-items: center;
+    margin: auto;
+    margin-right: 5%;
 }
