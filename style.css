@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;  
+    font-family: "Roboto", sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* body{
-
-} */
+body{
+    background-color: whitesmoke;
+}
 header div{
     padding: 30px;
     background-color: #FAE000;
@@ -44,4 +44,8 @@ a{
 
 a:hover{
     color: white;
+}
+
+main{
+    
 }
