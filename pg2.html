@@ -21,17 +21,73 @@
         <a href="pg5.html">Quem Somos</a>
     </nav>
 
-    <div class="login">
-        <h2>Login</h2>
-        <form>
-            <label for="username">Nome de Usuário:</label>
-            <input type="text" id="username" name="username" required>
+    <div id="login">
+        <form method="post">
+            <h2>Faça o seu Login: </h2>
+            <div id="barra-horizontal"></div>
 
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
+            <label for="username">Seu Nome de Usuário*</label>
+            <input type="text" id="username" name="username" required placeholder="Email:">
 
-            <button type="submit">Entrar</button>
+            <label for="password">Senha*</label>
+            <input type="password" id="password" name="password" required placeholder="Senha:">
+            
+            <input type="checkbox" id="remember">
+            <label for="remember">Lembrar Me!</label>
+            <button type="submit" id="button">Entrar</button>
         </form>
     </div>
 
 </body>
+
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #barra-horizontal
+    {
+        background-color: darkred;
+        height: 5px;
+        width: 100%;
+    }
+    form
+    {
+
+        background-color: white;
+        padding: 50px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    #login
+    {
+        max-width: 400px;
+        margin: 10px auto;
+        padding: 30px;
+        border-radius: 5px;
+    }
+    #username, #password
+    {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    #button
+    {
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: #f1f1f1; 
+    }
+    #button:hover
+    {
+        background-color: #ddd;
+        cursor: pointer;
+    }
+</style>
