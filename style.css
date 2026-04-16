@@ -8,7 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 header div{
     padding: 30px;
@@ -29,16 +32,16 @@ h1{
 nav{
     font-weight: bolder;
     text-align: center;
-    background-color: rgb(53, 53, 53);
-    color: goldenrod;
-    padding: 12px 700px;
+    background-color: #E30800;
+    color: #FFFF00;
+    padding: 12px 100px;
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
 a{
-    color: goldenrod;
+    color: #FFFF00;
     text-decoration: none;
 }
 
@@ -46,3 +49,16 @@ a:hover{
     color: white;
 }
 
+main{
+    flex: 1;
+}
+
+footer{
+    background-color:#E30800;
+    color: #FFFF00;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
+    font-weight: bolder;
+}
