@@ -5,13 +5,6 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-<<<<<<< HEAD
-=======
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-
->>>>>>> 505fb0bd195d9904a78246f570ad4ccef2677978
 body{
     height: 100vh;
     display: flex;
