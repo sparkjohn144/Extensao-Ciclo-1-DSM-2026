@@ -3,33 +3,45 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjetoExtensao</title>
+    <title>Barraca 013</title>
     <link rel="stylesheet" href="style.css">
-</html>
+    </head>
 
 <body>
 
     <header>
-
         <div>
-            <img src="img/palmerinha.png" alt="praia">
-            <h1>Barraca 013</h1>
-            <img src="img/marcinho.png" alt="marcinho">
+            <img id="logo" src="img/logo_alpha.png" alt="logo" width="180px">
+
+            <form action="">
+                <input type="text" placeholder="Pesquisar Sabor">
+                <img src="img/Lupa.png" alt="buscar">
+            </form>
+
+            <nav>
+                <a href="index.html">INÍCIO</a>
+                <a href="pg3.html">CARDÁPIO</a>
+                <a href="pg4.html">LOCALIZAÇÕES</a>
+                <a href="pg5.html">QUEM SOMOS</a>
+            </nav>
+            
+            <div class="buttom">
+                <img src="img/carrinho.png">
+            </div>
+            
+            <div class="buttom">
+                <a href="pg2.html"><img src="img/user.png"></a>
+            </div>
+
         </div>
-
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="pg2.html">Login</a>
-            <a href="pg3.html">Cardápio</a>
-            <a href="pg4.html">Localizações</a>
-            <a href="pg5.html">Quem Somos</a>
-        </nav>
-
     </header>
+
+
+    <main>
 
     <div id="login">
 
-        <form method="post">
+        <form class="lgn" method="post">
             <h2>Faça o seu Login: </h2>
             <div id="barra-horizontal"></div>
 
@@ -46,11 +58,6 @@
 
     </div>
 
-    
-    <main>
-
-        Macaco
-
     </main>
 
     <footer>
@@ -58,57 +65,7 @@
     Todos os Direitos Reservados.
 
     </footer>
-
+    
 </body>
 
-<style>
-    *
-    {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    #barra-horizontal
-    {
-        background-color: darkred;
-        height: 5px;
-        width: 100%;
-    }
-    form
-    {
-        box-shadow: 1px 1px 5px gray;
-        background-color: white;
-        padding: 50px;
-        border-radius: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-    #login
-    {
-        max-width: 400px;
-        margin: 10px auto;
-        padding: 30px;
-        border-radius: 5px;
-    }
-    #username, #password
-    {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-    #button
-    {
-        padding: 10px 20px;
-        border-radius: 10px;
-        border: none;
-        background-color: #f1f1f1; 
-    }
-    #button:hover
-    {
-        background-color: #ddd;
-        cursor: pointer;
-    }
-</style>
+</html>

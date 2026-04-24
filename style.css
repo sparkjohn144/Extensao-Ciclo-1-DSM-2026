@@ -7,46 +7,72 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: rgb(54, 54, 54);
     margin: 0;
 }
+
 header div{
     padding: 30px;
-    background-color: #FAE000;
+    background-color: #F7EF59;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
 }
 
-header div img{
-    height: 70px;
+form{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+    width: 30vw;
+
+    background-color: white;
+    border-radius: 5px;
+
 }
 
-h1{
-    text-align: center;
+input{
+    border: none;
+    font-size: 16px;
+    width: 80%;
 }
 
 nav{
     font-weight: bolder;
-    text-align: center;
-    background-color: #E30800;
-    color: #FFFF00;
     padding: 12px 100px;
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 a{
-    color: #FFFF00;
+    color: #D85854;
     text-decoration: none;
 }
 
 a:hover{
-    color: white;
+    color: black;
+    text-decoration: underline;
+    
+}
+
+.buttom{
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.buttom img{
+    width: 40px;
 }
 
 main{
@@ -54,11 +80,57 @@ main{
 }
 
 footer{
-    background-color:#E30800;
-    color: #FFFF00;
+    background-color:#D85854;
+    color: #F7EF59;
     text-align: center;
     height: 70px;
     line-height: 70px;
     font-size: 18px;
     font-weight: bolder;
 }
+
+/* INICIO Pagina Login*/
+    #barra-horizontal
+    {
+        background-color: darkred;
+        height: 5px;
+        width: 100%;
+    }
+    .lgn
+    {
+        box-shadow: 1px 1px 5px gray;
+        background-color: white;
+        padding: 50px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    #login
+    {
+        max-width: 400px;
+        margin: 10px auto;
+        padding: 30px;
+        border-radius: 5px;
+    }
+    #username, #password
+    {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    #button
+    {
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: #f1f1f1; 
+    }
+    #button:hover
+    {
+        background-color: #ddd;
+        cursor: pointer;
+    }
+/* INICIO Pagina Login*/
