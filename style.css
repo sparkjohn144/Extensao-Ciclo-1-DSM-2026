@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+
 body{
     height: 100vh;
     display: flex;
@@ -122,6 +123,13 @@ footer{
 }
 
 /* INICIO Pagina Login*/
+
+    form
+    {
+        width: 500px;
+        display: flex;
+        justify-content: center;
+    }
     #barra-horizontal
     {
         background-color: darkred;
@@ -141,6 +149,7 @@ footer{
     #login
     {
         display: flex;
+        align-items: center;
         justify-content: center;
         max-width: 400px;
         border-radius: 5px;
@@ -153,17 +162,40 @@ footer{
         border: 1px solid #ccc;
         border-radius: 4px;
     }
-    #button
+    #ter-conta
+    {
+        background-color: transparent;
+        border: none;
+        color: #D85854;
+        font-weight: bolder;
+        cursor: pointer;
+        padding: 10px 1px;
+        width: 100%;
+    }
+    #entrar-login
     {
         padding: 10px 20px;
         border-radius: 10px;
         border: none;
         background-color: #f1f1f1; 
+        transition: all 0.4s ease;
     }
-    #button:hover
+    #entrar-login:hover
     {
         background-color: #ddd;
         cursor: pointer;
+        transform: scale(1.1);
+        
+    }
+    .lembreme
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;;
+    }
+    #lembra
+    {
+        width: 100%;
     }
 /* FIM Pagina Login*/
 
