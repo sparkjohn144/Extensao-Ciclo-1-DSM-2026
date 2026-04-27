@@ -30,8 +30,8 @@ header div{
 form{
     display: flex;
     justify-content: space-between;
-    margin-left: 30px;
-    padding: 10px;
+    margin-left: 300px;
+    padding: 12px;
     width: 30vw;
     background-color: white;
     border-radius: 5px;
@@ -44,9 +44,11 @@ input{
 }
 nav{
     font-weight: bolder;
-    padding: 12px 100px;
+    padding: 12px;
     display: flex;
-    gap: 50px;
+    gap: 40px;
+    height: 65px;
+    align-items: center;
 }
 a{
     color: #D85854;
@@ -67,15 +69,18 @@ a:hover:after{
 } */
 
 .buttom{
-    padding: 0%;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    gap: 14px;
+    border: 2px solid rgb(87, 87, 87);
+    background-color: #D85854;
+    padding: 5px;
+    border-radius: 50%;
 }
 
+
 .buttom img{
+    display: flex;
+    justify-content: center;
     width: 30px;
+    align-items: center;
 }
 
 main{
@@ -92,6 +97,17 @@ main{
     bottom: 30px;
     right: 30px;
     border: 2px solid green;
+    border-radius: 50%;
+}
+
+.carrinho{
+    position: fixed;
+    padding: 10px;
+    width: 60px;
+    bottom: 100px;
+    right: 30px;
+    border: 2px solid rgb(87, 87, 87);
+    background-color: rgb(97, 124, 245);
     border-radius: 50%;
 }
 
