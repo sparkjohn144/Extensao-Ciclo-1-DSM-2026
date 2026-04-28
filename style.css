@@ -28,14 +28,17 @@ header div{
     justify-content: space-between;
 }
 
-form{
+#pesquisa{
     display: flex;
-    justify-content: space-between;
-    margin-left: 300px;
     padding: 12px;
     width: 30vw;
+    margin-left: 30%;
     background-color: white;
     border-radius: 5px;
+    justify-content: center;
+    background-image: url("img/Lupa.png");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 input{
@@ -54,28 +57,22 @@ nav{
 a{
     color: #D85854;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover{
     color: rgb(47, 47, 127);
 }
-/* 
-a:hover:after{
-    bottom: 0;
-    left: 0;
-    content: "";
-    height: 1px;
-    width: auto;
-    background-color: red;
-} */
-
 .buttom{
     border: 2px solid rgb(87, 87, 87);
     background-color: #D85854;
     padding: 5px;
     border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
 }
-
+.buttom:hover{
+    transform: scale(1.2);
+}
 
 .buttom img{
     display: flex;
@@ -99,10 +96,17 @@ main{
     right: 30px;
     border: 2px solid green;
     border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.zap:hover{
+    transform: scale(1.2);
 }
 
 .carrinho{
     position: fixed;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
     padding: 10px;
     width: 60px;
     bottom: 100px;
@@ -110,6 +114,9 @@ main{
     border: 2px solid rgb(87, 87, 87);
     background-color: rgb(97, 124, 245);
     border-radius: 50%;
+}
+.carrinho:hover{
+    transform: scale(1.2);
 }
 
 footer{
@@ -123,79 +130,51 @@ footer{
 }
 
 /* INICIO Pagina Login*/
-
-    form
-    {
-        width: 500px;
-        display: flex;
-        justify-content: center;
-    }
-    #barra-horizontal
-    {
-        background-color: darkred;
-        height: 5px;
-        width: 100%;
-    }
-    .lgn
-    {
-        box-shadow: 1px 1px 5px gray;
-        background-color: white;
-        padding: 50px;
-        border-radius: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-    #login
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 400px;
-        border-radius: 5px;
-    }
-    #username, #password
-    {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-    #ter-conta
-    {
-        background-color: transparent;
-        border: none;
-        color: #D85854;
-        font-weight: bolder;
-        cursor: pointer;
-        padding: 10px 1px;
-        width: 100%;
-    }
-    #entrar-login
-    {
-        padding: 10px 20px;
-        border-radius: 10px;
-        border: none;
-        background-color: #f1f1f1; 
-        transition: all 0.4s ease;
-    }
-    #entrar-login:hover
-    {
-        background-color: #ddd;
-        cursor: pointer;
-        transform: scale(1.1);
-        
-    }
-    .lembreme
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;;
-    }
-    #lembra
-    {
-        width: 100%;
-    }
-/* FIM Pagina Login*/
-
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.quadrado-login
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+}
+.barra-horizontal
+{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 20px 0;
+}
+.decadencia
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.decadencia input, .decadencia button{
+    border-radius: 16px;
+    padding: 8px;
+}
+#check{
+    width: 20px;
+    height: 20px;
+    margin-right:70%;
+}
+#teste{
+    font-size: 14px;
+    margin-right: 48%;
+    margin-top: -8%;
+}

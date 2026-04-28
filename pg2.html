@@ -15,8 +15,7 @@
             <a href="index.html"><img id="logo" src="img/logo_alpha.png" alt="logo" width="180px"></a>
 
             <form action="">
-                <input type="text" placeholder="Pesquisar Sabor">
-                <img src="img/Lupa.png" alt="buscar">
+                <input type="text" placeholder="Pesquisar Sabor" id="pesquisa">
             </form>
 
             <nav>
@@ -35,31 +34,23 @@
 
 
     <main>
+        <div class="quadrado-login">
+                <form method="post" class="decadencia">
+                   <h1>Faça seu Login: </h1>
+                    <div class="barra-horizontal"></div>
+                    Digite seu e-mail:
+                    <input type="text" required placeholder="Email:*">
+                    Digite sua senha:
+                    <input type="password" required placeholder="Senha*">
+                    <button type="submit">Entrar</button>
+                    <input type="checkbox" id="check" value="remember"> <label for="check" id="teste">Lembrar-me</label>
+                </form>
+            </div>
+        </div>
+        <div class="quadrado-login">
 
-    <div id="login">
-
-        <form class="lgn" method="post">
-            <h2>Crie sua conta: </h2>
-            <div id="barra-horizontal"></div>
-
-            <label for="username">Seu Nome de Usuário*</label>
-            <input type="text" id="username" name="username" required placeholder="Email:">
-
-            <label for="password">Senha*</label>
-            <input type="password" id="password" name="password" required placeholder="Senha:">
-            
-            <a href="#"><button type="button" id="ter-conta">Já possuo uma conta.</button></a>
-            <div class="lembreme">
-            <input type="checkbox" id="remember">
-            <label for="remember" id="lembra">Lembrar Me!</label></div>
-            <button type="submit" id="entrar-login">Entrar</button>
-        </form>
-
-    </div>
-
-    <a href="https://wa.me/5513992066397" target="_blank"><img class="zap" src="img/whatsappicon.png"></a>
-    <img class="carrinho" src="img/carrinho.svg">
-
+        </div>
+   
     </main>
 
     <footer>
