@@ -127,6 +127,7 @@ footer{
     line-height: 70px;
     font-size: 18px;
     font-weight: bolder;
+    margin-top: 5% ;
 }
 
 /* INICIO Pagina Login*/
@@ -142,9 +143,10 @@ main{
     justify-content: start;
     background-color: #F5F5F5;
     width: 50%;
-    height: 100%;
+    height: 90%;
     border-radius: 10px;
     box-shadow: black 0px 6px 12px -2px;
+    margin-top: 5%;
 }
 .barra-horizontal
 {
@@ -207,7 +209,7 @@ main{
 #esquecer-senha
 {
     text-decoration: underline;
-    margin-left: 33%;
+    margin-left: 46%;
 }
 .g_id_onload
 {
