@@ -139,16 +139,16 @@ main{
 .quadrado-login
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: gray;
-    width: 500px;
-    height: 400px;
+    justify-content: start;
+    background-color: #F5F5F5;
+    width: 50%;
+    height: 100%;
     border-radius: 10px;
+    box-shadow: black 0px 6px 12px -2px;
 }
 .barra-horizontal
 {
-    width: 100%;
+    width: 95%;
     height: 2px;
     background-color: black;
     margin: 20px 0;
@@ -164,17 +164,52 @@ main{
     flex-direction: column;
     gap: 20px;
 }
+.h1-login{
+    font-weight: bolder;
+    color: #000000;
+    margin-top: 1%;
+}
+.p-email, .p-senha{
+    font-size: 20px;
+    align-self: flex-start;
+    margin-left: 10%;
+    
+}
 .decadencia input, .decadencia button{
     border-radius: 16px;
-    padding: 8px;
+    padding: 9px;
+}
+.decadencia button
+{
+    background-color: #D85854;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 25%;
+}
+.porra
+{
+    display: flex;
+    width: 100%;
 }
 #check{
-    width: 20px;
-    height: 20px;
-    margin-right:70%;
+    width: auto;
+    margin-right: 4px;
+    margin-left: 11%;
 }
-#teste{
-    font-size: 14px;
-    margin-right: 48%;
-    margin-top: -8%;
+#enter-login
+{
+    margin: 1%;
+    width: 15%;
+}
+#esquecer-senha
+{
+    text-decoration: underline;
+    margin-left: 33%;
+}
+.g_id_onload
+{
+    border-radius: 5px;
 }

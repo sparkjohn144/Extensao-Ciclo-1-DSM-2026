@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barraca 013</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     </head>
 
 <body>
@@ -36,21 +37,36 @@
     <main>
         <div class="quadrado-login">
                 <form method="post" class="decadencia">
-                   <h1>Faça seu Login: </h1>
+                   <h1 class="h1-login">Faça seu Login </h1>
                     <div class="barra-horizontal"></div>
-                    Digite seu e-mail:
-                    <input type="text" required placeholder="Email:*">
-                    Digite sua senha:
-                    <input type="password" required placeholder="Senha*">
-                    <button type="submit">Entrar</button>
-                    <input type="checkbox" id="check" value="remember"> <label for="check" id="teste">Lembrar-me</label>
+                    <p class="p-email">Digite seu email:</p>
+                    <input type="text" placeholder="Email:*" required>
+                    <p class="p-senha">Digite sua senha:</p>
+                    <input type="password" placeholder="Senha*" required>
+                    <div class="porra">
+                    <input type="checkbox" id="check" value="remember"> 
+                    <label for="check" id="teste">Lembrar-me</label>
+                    <a href="#" id="esquecer-senha">Esqueceu a senha?</a>
+                    </div>
+                    <button type="submit" id="enter-login">Acessar</button>
+                    <div class="barra-horizontal"></div>
+                    <div id="g_id_onload"
+                        data-client_id="SEU_CLIENT_ID.apps.googleusercontent.com"
+                        data-context="signin"
+                        data-callback="handleCredentialResponse"
+                        data-auto_prompt="false">
+                    </div>
+                    <div class="g_id_signin"
+                        data-type="standard"
+                        data-size="large"
+                        data-theme="outline"
+                        data-text="sign_in_with"
+                        data-shape="rectangular"
+                        data-logo_alignment="left">
+                    </div>
                 </form>
             </div>
-        </div>
-        <div class="quadrado-login">
-
-        </div>
-   
+        </div>  
     </main>
 
     <footer>
