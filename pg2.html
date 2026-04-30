@@ -37,32 +37,34 @@
     <main>
         <div class="quadrado-login">
                 <form method="post" class="decadencia">
+
                    <h1 class="h1-login">Faça seu Login </h1>
                     <div class="barra-horizontal"></div>
+
                     <p class="p-email">Digite seu email:</p>
                     <input type="text" placeholder="Email:*" required>
+
                     <p class="p-senha">Digite sua senha:</p>
-                    <input type="password" placeholder="Senha:*" required>
+                    <div class="barraContainer">
+                    <input class="barra" id="senha-barra" type="text" placeholder="Email:*" required>
+                    <label for="senha-barra" id="senha-label">Senha</label>
+                    </div>
+
                     <div class="porra">
+
                     <input type="checkbox" id="check" value="remember"> 
                     <label for="check" id="teste">Lembrar-me</label>
                     <a href="#" id="esquecer-senha">Esqueceu a senha?</a>
+
+                    </div>
+                    <div class="logins-alt">
+
+                    <img src="img/google.png" alt="Google" id="google-login">
+                    <img src="img/insta.png" alt="Instagram" id="insta-login">
+
                     </div>
                     <button type="submit" id="enter-login">Acessar</button>
                     <div class="barra-horizontal"></div>
-                    <div id="g_id_onload"
-                        data-client_id="SEU_CLIENT_ID.apps.googleusercontent.com"
-                        data-context="signin"
-                        data-callback="handleCredentialResponse"
-                        data-auto_prompt="false">
-                    </div>
-                    <div class="g_id_signin"
-                        data-type="standard"
-                        data-size="large"
-                        data-theme="outline"
-                        data-text="sign_in_with"
-                        data-shape="rectangular"
-                        data-logo_alignment="left">
                     </div>
                 </form>
             </div>
