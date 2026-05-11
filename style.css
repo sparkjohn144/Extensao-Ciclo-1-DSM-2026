@@ -178,7 +178,6 @@ main{
     
 }
 .decadencia input, .decadencia button{
-    /* border-radius: 16px; */
     padding: 9px;
 }
 .decadencia button
@@ -238,35 +237,58 @@ main{
 
 .barraContainer {
     display: flex;
-    flex-direction: column;
-
-    justify-content: flex-start;
-    width: 90%;
-    height: auto;
+    position: relative;
+    padding: 15px 0 0;
+    margin-top:10px;
+    margin-left: 1%;
+    width: 80%;
 }
 
 .barra {
-    background-color: #F5F5F5;
+    width: 100%;
+    border: 0;
     border-bottom: 2px solid black;
     outline: 0;
+    font-size: 1xrem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s ease-in;
+
+    &::placeholder{
+        color: black;
+    }
+
+    &::placeholder-show ~ .senha-label
+    {
+        font-size: 1.3rem;
+        cursor: text;
+        top: 20px;
+        color: black;
+    }
 }
 
 #senha-label {
     position: absolute;
     display: block;
     transition: .1s;
-
-    top: -6;
-    opacity: 1;
+    top: -0;
+    opacity: 0;
+    font-size: 1rem;
 }
 
 .barra:focus  {
+    &::placeholder{
+        color: transparent;
+    }
     ~ #senha-label{
         display : block;
         opacity: 1;
         top: 0;
+        transition: 0.2s;
+        border-image: linear-gradient(to right, #F5F5F5,#D85854) 1;
+        border-image-slice: 1;
+        
     }
-    padding: 6px;
-
+    
 }
-
