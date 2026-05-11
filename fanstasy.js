@@ -15,7 +15,4 @@ function mudarPagina()
         alert('Preencha os Campos Necessários ');   
     }
 
-
-
-    //window.location.href = 'index.html';
 }
