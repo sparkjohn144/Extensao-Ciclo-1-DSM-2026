@@ -6,6 +6,7 @@
     <title>Barraca 013</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="fanstasy.js"></script>
     </head>
 
 <body>
@@ -44,7 +45,7 @@
 
 
                     <div class="barraContainer">
-                    <input class="barra" id="senha-barra" type="email" placeholder="Email:" required>
+                    <input class="barra" id="senha-barra" type="text" placeholder="Email:" required>
                     <label for="senha-barra" id="senha-label">Email:</label>
                     </div>
 
@@ -66,7 +67,7 @@
                     <img src="img/insta.png" alt="Instagram" id="insta-login">
 
                     </div>
-                    <button type="submit" id="enter-login">Acessar</button>
+                    <button id="enter-login" onclick="mudarPagina()">Acessar</button>
                     <div class="barra-horizontal"></div>
                     </div>
                 </form>
