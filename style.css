@@ -30,7 +30,9 @@ header div{
 }
 
 #logo{
-    margin-left: 30%;
+    display: block;
+    margin-left: 90%;
+    width: 150px;
 }
 
 #pesquisa{
@@ -369,10 +371,12 @@ main{
     gap: 35px;
     background-color: #F7EF59;
     border-radius: 30px;
+    box-shadow: 5px 5px 5px #000000;
 }
 
 .quemsomosletras{
     font-size: larger;
+    font-weight:500;
     line-height: 42px;
 }
 
