@@ -32,7 +32,7 @@ header div{
     display: flex;
     padding: 12px;
     width: 30vw;
-    margin-left: 34%;
+    /* margin-left: 34%; */
     background-color: white;
     border-radius: 5px;
     justify-content: center;
@@ -298,12 +298,18 @@ main{
     flex-direction: column;
 }
 
+.bannerquemsomos{
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0px 5px 5px #000000;
+}
+
 .quemsomosmodel{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin: 0;
-    padding: 100px;
+    padding: 50px;
     border: 0;
     vertical-align: baseline;
     gap: 35px;
@@ -315,8 +321,10 @@ main{
 
 .quemsomosmodel img{
     border-radius: 40px;
-    box-shadow: 10px 10px 10px #000000;
+    box-shadow: 5px 5px 5px #000000;
 }
 .quemsomosmodel h2{
     font-size: 50px;
+    color: #D85854;
+    font-style: italic;
 }
