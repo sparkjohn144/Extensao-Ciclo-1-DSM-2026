@@ -25,17 +25,19 @@ header div{
     background-color: #F7EF59;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
+}
+
+#logo{
+    margin-left: 30%;
 }
 
 #pesquisa{
-    display: flex;
     padding: 12px;
-    width: 30vw;
-    /* margin-left: 34%; */
+    width: 35vw;
+    margin-left: 20%;
     background-color: white;
     border-radius: 5px;
-    justify-content: center;
     background-image: url("img/Lupa.png");
     background-repeat: no-repeat;
     background-position: right;
@@ -48,9 +50,9 @@ input{
 }
 nav{
     font-weight: bolder;
-    padding: 12px;
+    padding-right: 12px;
     display: flex;
-    gap: 40px;
+    gap: 25px;
     height: 65px;
     align-items: center;
 }
@@ -291,6 +293,57 @@ main{
         
     }
     
+}
+
+/* Cardápio */
+#cardapio{
+    background-color: #c2bfb8;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px;
+}
+
+.itemcardapio{
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    width: 270px;
+    height: 400px;
+    margin: 20px;
+    transition: filter 0.3s;
+    border-radius: 20px;
+}
+
+.itemcardapio:hover{
+    filter: brightness(0.6);
+}
+
+.fotopastel{
+    border-radius: 20px 20px 0px 0px;
+    width: 270px;
+}
+.under{
+    background-color: white;
+}
+.nomepastel{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.descricaopastel{
+    font-size: 16px;
+    padding-inline: 10px;
+}
+
+.precopastel{
+    text-align: end;
+    margin: 0;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(179, 7, 7)
 }
 
 /* Quem Somos */
